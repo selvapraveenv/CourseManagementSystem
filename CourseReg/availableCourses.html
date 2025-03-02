@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Available Courses</title>
+		<script src="script.js"></script>
+		<style>
+            td{
+                background-color: aliceblue;
+				text-align: center;
+            }
+    
+			h2{
+				font-size: xx-large;
+				padding-top: 30px;
+				padding-bottom: 20px;
+				text-align: center;
+			}
+
+            body{
+                padding: 50px;
+				background-color: rgb(229, 224, 224);
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+			
+        </style>
+	</head>
+
+	<body>
+		<h2>List of Available Courses</h2>
+		<table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100">Course Id</th>
+                <th width="150">Course Name</th>
+                <th width="150">Trainer</th>
+                <th width="140">Duration(weeks)</th>
+            </tr>
+
+			<tbody id="coursetable"></tbody>
+
+			<script>
+				window.onload = function(){
+					showCourses();
+				};
+			</script>
+		</table>
+	</body>
+</html>
