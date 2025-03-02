@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Course Registration Portal</title>
+	<style>
+		button {
+			background-color: #595d5e; 
+			color: white;             
+			padding: 20px 20px;
+			margin-top: 20px;
+			margin-left: 20px;        
+			border-radius: 5px;      
+		}
+	
+		button:hover {
+			background-color: #2f3031; 
+		}
+
+		body {
+			font-family: Arial, sans-serif; 
+			background-color: rgb(229, 224, 224);
+			text-align: center; 
+			margin-top: 190px;
+		}
+
+		h2, a, button {
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-size: large;
+		}
+
+		h2 {
+			font-size: xxx-large;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Welcome to Course Registration Portal</h2>
+	 <a href="registerCourse.html"><button>Register Course</button></a>
+	 <a href="availableCourses.html"><button>Available Courses</button></a>
+	 <a href="enrolledStudents.html"><button>Enrolled Students</button></a>
+
+	<script>
+		fetch("http://localhost:8080/courses")
+		.then((response) => response.json())
+		.then((data) => console.log(data));
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Course Registration</title>
+		<style>
+			h1 {
+				color:rgb(13, 17, 17);
+			}
+
+            body {
+                background-color: rgb(229, 224, 224);
+                text-align: center;
+				padding-top: 100px;
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-size: large;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+
+			label,option,h1 {
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+        </style>
+	</head>
+	<body>
+		<h1>Enroll in any course to start learning</h1>
+		<form action="http://localhost:8080/courses/register" method="post">
+			<label for="name">Enter Name</label><br>
+			<input name="name" type="text"> <br><br>
+			
+			<label for="email">Enter Email Id</label><br>
+			<input name="email" type="text"> <br><br>
+			
+			<label for="course">Select a Course</label><br>
+			<select name="courseName" id="courseName">
+				<option value="Java">Java</option>
+				<option value="Python">Python</option>
+				<option value="React">React</option>
+				<option value="PHP">PHP</option>
+			</select> 
+			<br><br>
+
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

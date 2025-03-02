@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Enrolled Students</title>
+		<script src="script.js"></script>
+		<style>
+            td{
+                background-color: aliceblue;
+				text-align: center;
+            }
+    
+			h2{
+				font-size: xx-large;
+				padding-top: 30px;
+				padding-bottom: 20px;
+				text-align: center;
+			}
+
+            body{
+                padding: 50px;
+				background-color: rgb(229, 224, 224);
+				font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+			
+        </style>
+	</head>
+
+	<body>
+		<h2>List of Enrolled Students</h2>
+		<table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="50">Id</th>
+                <th width="150">Name</th>
+                <th width="210">Email Id</th>
+                <th width="150">Course Name</th>
+            </tr>
+
+			<tbody id="enrolledTable"></tbody>
+
+			<script>
+				window.onload = function(){
+					showEnrolledStudents();
+				};
+			</script>
+		</table>
+	</body>
+</html>
